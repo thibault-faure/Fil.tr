@@ -4,7 +4,7 @@ Fil.tr
 ##Index##
 
 * **[Syntax](#syntax)**
-	* [Main](#main) 
+	* [Filter API](#filter-api) 
 	* [Environment](#environment-e) 
 	* [Filter](#filter-f)
 	* [Data](#data-d)
@@ -16,6 +16,7 @@ Fil.tr
 	* [OS Filter](#os-filter)
 	* [Random Filter](#random-filter)
 	* [Retina Filter](#retina-filter)
+	* [Time Filter](#time-filter)
 	* [Weekdays Filter](#weekdays-filter)
 	
 
@@ -23,7 +24,7 @@ Fil.tr
 ##Syntax##
 
 
-###Main###
+###Filter API###
  
 <_Here is the description of the environment_>
 
@@ -312,7 +313,42 @@ You can filter the following list of OS :
 ```
 
 [_go on top_](#index)
- 
+
+###Time Filter###
+
+<_Here is the description of the filter_>
+
+```javascript
+ 	{
+ 		"type" : "Time",
+  		"res" : [
+  			{
+  				"if" : "13:37/00-20:00:00",
+	  			"then" : d
+  			},
+  		],
+  		"default" : d, 
+  		"options" : {
+  			"time" : "server"
+  		}
+ 	}    
+```
+
+
+Define intervals with "-".You can define intervals between Date, hours, seconds …
+
+To define a start-date, use "YYY:MM:DD hh:mm:ss-".
+
+To define an end-date, use "-YYY:MM:DD hh:mm:ss".
+
+Time option is available with these values:
+
+	* "server" - The time and date reference is based on current time and date in UTC/GMT. This is the default option.
+	* "local" - The time and date reference is based on current time and date in the user time zone
+	* "UTC+\*" - The time and date reference is based on current time and date in UTC+\* zone _(from UTC-12 to UTC+14)_
+	
+[_go on top_](#index)
+
 ###Weekdays Filter###
 
 <_Here is the description of the filter_>
@@ -336,7 +372,7 @@ You can filter the following list of OS :
   		],
   		"default" : d, 
   		"options" : {
-  			"time" : "UTC"
+  			"time" : "server"
   		}
  	}    
 ```
@@ -349,8 +385,8 @@ Different weekdays for the same data with "/". _(eg. For "Tuesday AND Sunday" us
 
 Time option is available with these values:
 
-* "server" - The time and date reference is based on current time and date in UTC/GMT
-* "local" - The time and date reference is based on current time and date in the user time zone
-* "UTC+\*" - The time and date reference is based on current time and date in UTC+\* zone (from _UTC-12_ to _UTC+14_)
+	* "server" - The time and date reference is based on current time and date in UTC/GMT. This is the default option.
+	* "local" - The time and date reference is based on current time and date in the user time zone
+	* "UTC+\*" - The time and date reference is based on current time and date in UTC+\* zone _(from UTC-12 to UTC+14)_
 	
 [_go on top_](#index)
