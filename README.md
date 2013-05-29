@@ -5,22 +5,22 @@ Fil.tr
 ----
 * **[Syntax](#syntax)**
 	* [Main](#main) 
-	* [Environment](#environment) 
-	* [Filter](#filter)
-	* [Data](#data)
+	* [Environment](#environment-e) 
+	* [Filter](#filter-f)
+	* [Data](#data-d)
 * **[Filters](#filters)**
-	* [Lang Filter](#langFilter)
-	* [Orientation Filter](#orientationFilter)
-	* [OS Filter](#osFilter)
-	* [Random Filter](#randomFilter)
-	* [Retina Filter](#retinaFilter)
+	* [Lang Filter](#lang-filter)
+	* [Orientation Filter](#orientation-filter)
+	* [OS Filter](#os-filter)
+	* [Random Filter](#random-filter)
+	* [Retina Filter](#retina-filter)
 	
 
 
-**[Syntax](id:syntax)**
+**[Syntax]**
 ----
 
-###[Main](id:main)###
+###[Main]###
 
 	<_Here is the description of the environment_>
 
@@ -31,7 +31,7 @@ Fil.tr
   		}    
 	```
  
-###[Environment](id:environment) `e`###
+###[Environment] `e`###
 
 	<_Here is the description of the environment_>
 	
@@ -76,7 +76,7 @@ Fil.tr
 	  	}
 	```
   
-###[Filter](id:filter) `f`###
+###[Filter] `f`###
 
 	<_Here is the description of the filter_>
 	
@@ -95,7 +95,8 @@ Fil.tr
   			}
   	  	}
 	```
-###[Data](id:data) `d`**
+	
+###[Data] `d`###
 
 	<_Here is the description of the filter_>
 	
@@ -106,10 +107,10 @@ Fil.tr
   	  	}
 	```
 	
-**[Filters](id:filters)**
+**[Filters]**
 ----
 
-###[Lang Filter](id:langFilter)###
+###[Lang Filter]###
 
 	<_Here is the description of the filter_>
 
@@ -143,7 +144,7 @@ Fil.tr
 	* Greek - "EL"
 		
 
-###[Orientation Filter](id:orientationFilter)###
+###[Orientation Filter]###
 
 	<_Here is the description of the filter_>
 
@@ -167,7 +168,7 @@ Fil.tr
   		}    
 	```
 	
-###[OS Filter](id:osFilter)###
+###[OS Filter]###
 
 	<_Here is the description of the filter_>
 
@@ -197,7 +198,7 @@ Fil.tr
 	* "Windows"
 
 
-###[Random Filter](id:randomFilter)###
+###[Random Filter]###
 
 	<_Here is the description of the filter_>
 
@@ -218,7 +219,7 @@ Fil.tr
   		}    
 	```
 
-###[Retina Filter](id:retinaFilter)###
+###[Retina Filter]###
 
 	<_Here is the description of the filter_>
 
