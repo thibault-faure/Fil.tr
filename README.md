@@ -9,11 +9,14 @@ Fil.tr
 	* [Filter](#filter-f)
 	* [Data](#data-d)
 * **[Filters](#filters)**
+	* [Country Filter](#country-filter)
+	* [Device Filter](#device-filter)
 	* [Lang Filter](#lang-filter)
 	* [Orientation Filter](#orientation-filter)
 	* [OS Filter](#os-filter)
 	* [Random Filter](#random-filter)
 	* [Retina Filter](#retina-filter)
+	* [Weekdays Filter](#weekdays-filter)
 	
 
 
@@ -118,6 +121,59 @@ Fil.tr
 	
 ##Filters##
 
+###Country Filter###
+
+<_Here is the description of the filter_>
+
+```javascript
+  	{
+  		"type" : "COUNTRY",
+		"res" : [
+			{
+	  			"if" : "EN",
+		  		"then" : d
+	  		},
+	  		{
+	  				"if" : "FR",
+	  				"then" : d,
+	  			}
+	  		],
+		"default" : d,
+ 	}    
+```
+	
+You can filter all countries in the [ISO Country codes list](http://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm).
+ 	
+[_go on top_](#index)
+
+###Device Filter###
+
+<_Here is the description of the filter_>
+
+```javascript
+ 	{
+ 		"type" : "DEVICE",
+  		"res" : [
+  			{
+  				"if" : "mobile",
+	  			"then" : d
+  			},
+  			{
+  				"if" : "computer",
+  				"then" : d,
+  			}
+  		],
+  		"default" : d
+ 	}    
+```
+You can filter the following list of languages : 
+
+	* "mobile"
+	* "tablet"
+	* "computer"
+	
+[_go on top_](#index)
+
 ###Lang Filter###
 
 <_Here is the description of the filter_>
@@ -127,7 +183,7 @@ Fil.tr
   		"type" : "LANG",
 		"res" : [
 			{
-	  			"if" : "EN",
+	  			"if" : "US",
 		  		"then" : d
 	  		},
 	  		{
@@ -257,4 +313,44 @@ You can filter the following list of OS :
 
 [_go on top_](#index)
  
+###Weekdays Filter###
 
+<_Here is the description of the filter_>
+
+```javascript
+ 	{
+ 		"type" : "WEEKDAY",
+  		"res" : [
+  			{
+  				"if" : "1",
+	  			"then" : d
+  			},
+  			{
+  				"if" : "2/7",
+  				"then" : d,
+  			}
+  			{
+  				"if" : "3-5",
+  				"then" : d,
+  			}
+  		],
+  		"default" : d, 
+  		"options" : {
+  			"time" : "UTC"
+  		}
+ 	}    
+```
+
+The weekday number, from 1 through 7, beginning with Monday and ending with Sunday.
+
+Intervals with "-". _(eg. For "from Wednesday to Friday" use "3-5")_
+
+Different weekdays for the same data with "/". _(eg. For "Tuesday AND Sunday" use "2/7")_
+
+Time option is available with these values:
+
+* "server" - The time and date reference is based on current time and date in UTC/GMT
+* "local" - The time and date reference is based on current time and date in the user time zone
+* "UTC+\*" - The time and date reference is based on current time and date in UTC+\* zone (from _UTC-12_ to _UTC+14_)
+	
+[_go on top_](#index)
