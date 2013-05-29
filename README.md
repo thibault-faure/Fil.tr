@@ -1,7 +1,7 @@
 Fil.tr
 ======
 
-**Index**
+##Index##
 ----
 * **[Syntax](#syntax)**
 	* [Main](#main) 
@@ -17,10 +17,10 @@ Fil.tr
 	
 
 
-**[Syntax]**
+##Syntax##
 ----
 
-###[Main]###
+###Main###
 
 	<_Here is the description of the environment_>
 
@@ -31,7 +31,7 @@ Fil.tr
   		}    
 	```
  
-###[Environment] `e`###
+###Environment `e`###
 
 	<_Here is the description of the environment_>
 	
@@ -76,7 +76,7 @@ Fil.tr
 	  	}
 	```
   
-###[Filter] `f`###
+###Filter `f`###
 
 	<_Here is the description of the filter_>
 	
@@ -96,7 +96,7 @@ Fil.tr
   	  	}
 	```
 	
-###[Data] `d`###
+###Data `d`###
 
 	<_Here is the description of the filter_>
 	
@@ -107,10 +107,10 @@ Fil.tr
   	  	}
 	```
 	
-**[Filters]**
+##Filters##
 ----
 
-###[Lang Filter]###
+###Lang Filter###
 
 	<_Here is the description of the filter_>
 
@@ -144,7 +144,7 @@ Fil.tr
 	* Greek - "EL"
 		
 
-###[Orientation Filter]###
+###Orientation Filter###
 
 	<_Here is the description of the filter_>
 
@@ -168,7 +168,7 @@ Fil.tr
   		}    
 	```
 	
-###[OS Filter]###
+###OS Filter###
 
 	<_Here is the description of the filter_>
 
@@ -198,7 +198,7 @@ Fil.tr
 	* "Windows"
 
 
-###[Random Filter]###
+###Random Filter###
 
 	<_Here is the description of the filter_>
 
@@ -219,7 +219,7 @@ Fil.tr
   		}    
 	```
 
-###[Retina Filter]###
+###Retina Filter###
 
 	<_Here is the description of the filter_>
 
