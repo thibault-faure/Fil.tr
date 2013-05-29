@@ -18,7 +18,7 @@ Fil.tr
 	
 	```javascript
   		"e" : {
-  			global : {
+  			"global" : {
   				"datetime":"2013-05-28T14:07:13.877Z",
 				"referrer": "http://google.com",
 				"cookies": String,
@@ -63,7 +63,7 @@ Fil.tr
 	
 	```javascript
   		"f" : {
-  			"name" : "_filterName_"
+  			"name" : _filterName_
   			"res" : [
   				{
   					"if" : "_conditionValue",
@@ -72,7 +72,7 @@ Fil.tr
   			],
   			default : d,
   			options : {
-  				"_optionKey_" : "_optionValue_"
+  				"_optionKey_" : _optionValue_
   			}
   	  	}
 	```
@@ -82,7 +82,7 @@ Fil.tr
 	
 	```javascript
   		"d" : {
-  			"type" : "_dataType_",
-  			"content" : "_dataContent_"
+  			"type" : _dataType_,
+  			"content" : _dataContent_
   	  	}
 	```
