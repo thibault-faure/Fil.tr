@@ -20,7 +20,7 @@ Fil.tr
 **[Syntax](id:syntax)**
 ----
 
-* **[Main](id:main):**
+###[Main](id:main)###
 
 	<_Here is the description of the environment_>
 
@@ -31,7 +31,7 @@ Fil.tr
   		}    
 	```
  
-* **[Environment](id:environment) `e`**
+###[Environment](id:environment) `e`###
 
 	<_Here is the description of the environment_>
 	
@@ -76,7 +76,7 @@ Fil.tr
 	  	}
 	```
   
-* **[Filter](id:filter) `f`**
+###[Filter](id:filter) `f`###
 
 	<_Here is the description of the filter_>
 	
@@ -95,7 +95,7 @@ Fil.tr
   			}
   	  	}
 	```
-* **[Data](id:data) `d`**
+###[Data](id:data) `d`**
 
 	<_Here is the description of the filter_>
 	
@@ -109,7 +109,7 @@ Fil.tr
 **[Filters](id:filters)**
 ----
 
-* **[Lang Filter](id:langFilter):**
+###[Lang Filter](id:langFilter)###
 
 	<_Here is the description of the filter_>
 
@@ -131,19 +131,19 @@ Fil.tr
 	```
 	
 	You can filter the following list of languages : 
-		* English - "EN"
-		* French - "FR"
-		* Spanish - "ES"
-		* Arabic - "AR"
-		* Russian - "RU"
-		* Chinese (Simplified) - "ZH"
-		* Portuguese - "PT"
-		* Japanese - "JA"
-		* Hindi - "HI"
-		* Greek - "EL"
+	* English - "EN"
+	* French - "FR"
+	* Spanish - "ES"
+	* Arabic - "AR"
+	* Russian - "RU"
+	* Chinese (Simplified) - "ZH"
+	* Portuguese - "PT"
+	* Japanese - "JA"
+	* Hindi - "HI"
+	* Greek - "EL"
 		
 
-* **[Orientation Filter](id:orientationFilter):**
+###[Orientation Filter](id:orientationFilter)###
 
 	<_Here is the description of the filter_>
 
@@ -167,7 +167,7 @@ Fil.tr
   		}    
 	```
 	
-* **[OS Filter](id:osFilter):**
+###[OS Filter](id:osFilter)###
 
 	<_Here is the description of the filter_>
 
@@ -189,15 +189,15 @@ Fil.tr
 	```
 	
 	You can filter the following list of OS : 
-		* "iOS"
-		* "Android"
-		* "Windows Phone"
-		* "BlackBerry"
-		* "Mac Os X"
-		* "Windows"
+	* "iOS"
+	* "Android"
+	* "Windows Phone"
+	* "BlackBerry"
+	* "Mac Os X"
+	* "Windows"
 
 
-* **[Random Filter](id:randomFilter):**
+###[Random Filter](id:randomFilter)###
 
 	<_Here is the description of the filter_>
 
@@ -218,7 +218,7 @@ Fil.tr
   		}    
 	```
 
-* **[Retina Filter](id:retinaFilter):**
+###[Retina Filter](id:retinaFilter)###
 
 	<_Here is the description of the filter_>
 
