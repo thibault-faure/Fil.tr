@@ -1,9 +1,28 @@
 Fil.tr
 ======
-**Syntax**
+
+**Index**
+----
+* **[Syntax](#syntax)**
+	* [Main](#main) 
+	* [Environment](#environment) 
+	* [Filter](#filter)
+	* [Data](#data)
+* **[Filters](#filters)**
+	* [Lang Filter](#langFilter)
+	* [Orientation Filter](#orientationFilter)
+	* [OS Filter](#osFilter)
+	* [Random Filter](#randomFilter)
+	* [Retina Filter](#retinaFilter)
+	
+
+
+**[Syntax](id:syntax)**
 ----
 
-* **Main data:**
+* **[Main](id:main):**
+
+	<_Here is the description of the environment_>
 
 	```javascript
   		{
@@ -12,7 +31,7 @@ Fil.tr
   		}    
 	```
  
-* **Environment `e`**
+* **[Environment](id:environment) `e`**
 
 	<_Here is the description of the environment_>
 	
@@ -57,7 +76,7 @@ Fil.tr
 	  	}
 	```
   
-* **Filter `f`**
+* **[Filter](id:filter) `f`**
 
 	<_Here is the description of the filter_>
 	
@@ -70,13 +89,13 @@ Fil.tr
   					"then" : d
   				}
   			],
-  			default : d,
-  			options : {
+  			"default" : d,
+  			"options" : {
   				"_optionKey_" : _optionValue_
   			}
   	  	}
 	```
-* **Data `d`**
+* **[Data](id:data) `d`**
 
 	<_Here is the description of the filter_>
 	
@@ -86,3 +105,137 @@ Fil.tr
   			"content" : _dataContent_
   	  	}
 	```
+	
+**[Filters](id:filters)**
+----
+
+* **[Lang Filter](id:langFilter):**
+
+	<_Here is the description of the filter_>
+
+	```javascript
+  		{
+  			"type" : "LANG",
+	  		"res" : [
+	  			{
+	  				"if" : "EN",
+		  			"then" : d
+	  			},
+	  			{
+	  				"if" : "FR",
+	  				"then" : d,
+	  			}
+	  		],
+	  		"default" : d,
+  		}    
+	```
+	
+	You can filter the following list of languages : 
+		* English - "EN"
+		* French - "FR"
+		* Spanish - "ES"
+		* Arabic - "AR"
+		* Russian - "RU"
+		* Chinese (Simplified) - "ZH"
+		* Portuguese - "PT"
+		* Japanese - "JA"
+		* Hindi - "HI"
+		* Greek - "EL"
+		
+
+* **[Orientation Filter](id:orientationFilter):**
+
+	<_Here is the description of the filter_>
+
+	```javascript
+  		{
+  			"type" : "ORIENTATION",
+	  		"res" : [
+	  			{
+	  				"if" : "portrait",
+		  			"then" : d
+	  			},
+	  			{
+	  				"if" : "landscape",
+	  				"then" : d,
+	  			}
+	  		],
+	  		"default" : d,
+	  		"options" : {
+				"mobileOnly" : Bool
+	  		}
+  		}    
+	```
+	
+* **[OS Filter](id:osFilter):**
+
+	<_Here is the description of the filter_>
+
+	```javascript
+  		{
+  			"type" : "OS",
+	  		"res" : [
+	  			{
+	  				"if" : "iOS",
+		  			"then" : d
+	  			},
+	  			{
+	  				"if" : "android",
+	  				"then" : d,
+	  			}
+	  		],
+	  		"default" : d,
+  		}    
+	```
+	
+	You can filter the following list of OS : 
+		* "iOS"
+		* "Android"
+		* "Windows Phone"
+		* "BlackBerry"
+		* "Mac Os X"
+		* "Windows"
+
+
+* **[Random Filter](id:randomFilter):**
+
+	<_Here is the description of the filter_>
+
+	```javascript
+  		{
+  			"type" : "RANDOM",
+	  		"res" : [
+	  			{
+	  				"if" : "80",
+		  			"then" : d
+	  			},
+	  			{
+	  				"if" : "10",
+	  				"then" : d,
+	  			}
+	  		],
+	  		"default" : d
+  		}    
+	```
+
+* **[Retina Filter](id:retinaFilter):**
+
+	<_Here is the description of the filter_>
+
+	```javascript
+  		{
+  			"type" : "RETINA",
+	  		"res" : [
+	  			{
+	  				"if" : true,
+		  			"then" : d
+	  			},
+	  			{
+	  				"if" : false,
+	  				"then" : d,
+	  			}
+	  		]
+  		}    
+	```
+	
+ 
