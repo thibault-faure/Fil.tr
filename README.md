@@ -66,7 +66,7 @@ Fil.tr
   			"name" : _filterName_
   			"res" : [
   				{
-  					"if" : "_conditionValue",
+  					"if" : _conditionValue_,
   					"then" : d
   				}
   			],
