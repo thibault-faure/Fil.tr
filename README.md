@@ -338,7 +338,6 @@ You can filter the following list of OS :
  	}    
 ```
 
-
 Date must be defined using the following pattern : "YYYY:MM:DD hh:mm:ss".
 
 You can omit any left-part of both dates in order to create smaller period.
