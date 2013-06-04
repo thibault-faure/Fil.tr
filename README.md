@@ -45,6 +45,7 @@ Fil.tr
 	"e" : {
 		"global" : {
 			"datetime":"2013-05-28T14:07:13.877Z",
+			"timezoneOffser":"-120",
 			"referrer": "http://google.com",
 			"cookies": String,
 			"dimensions":{
