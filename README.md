@@ -52,7 +52,7 @@ Fil.tr
 				"availWidth":1280,
 				"height":800,
 				"availHeight":708
-			},
+				},
   		},
   		"geolocation" : {
   			"available" : Bool,
@@ -316,14 +316,17 @@ You can filter the following list of OS :
 
 ###Time Filter###
 
-<_Here is the description of the filter_>
+<_Filter a period of time_>
 
 ```javascript
  	{
  		"type" : "Time",
   		"res" : [
   			{
-  				"if" : "13:37/00-20:00:00",
+  				"if" : {
+  								"from" : DATE,
+  								"to : DATE
+  							},
 	  			"then" : d
   			},
   		],
@@ -335,11 +338,8 @@ You can filter the following list of OS :
 ```
 
 
-Define intervals with "-".You can define intervals between Date, hours, seconds …
-
-To define a start-date, use "YYY:MM:DD hh:mm:ss-".
-
-To define an end-date, use "-YYY:MM:DD hh:mm:ss".
+Date must be defined using the following pattern : "YYYY:MM:DD hh:mm:ss".
+You can omit any left-part of both dates in order to create smaller period.
 
 Time option is available with these values:
 
