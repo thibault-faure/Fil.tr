@@ -323,7 +323,7 @@ You can filter the following list of OS :
  		"type" : "Time",
   		"res" : [
   			{
-  				"if" : "13:37/00-20:00:00",
+  				"if" : "????",
 	  			"then" : d
   			},
   		],
@@ -337,9 +337,9 @@ You can filter the following list of OS :
 
 Define intervals with "-".You can define intervals between Date, hours, seconds …
 
-To define a start-date, use "YYY:MM:DD hh:mm:ss-".
+To define a start-date, use "YYYY-MM-DDTHH:mm:ss-".
 
-To define an end-date, use "-YYY:MM:DD hh:mm:ss".
+To define an end-date, use "-YYYY-MM-DDTHH:mm:ss".
 
 Time option is available with these values:
 
