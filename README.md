@@ -45,6 +45,7 @@ Fil.tr
 	"e" : {
 		"global" : {
 			"datetime":"2013-05-28T14:07:13.877Z",
+			"timezoneOffser":"-120",
 			"referrer": "http://google.com",
 			"cookies": String,
 			"dimensions":{
@@ -339,6 +340,7 @@ You can filter the following list of OS :
 
 
 Date must be defined using the following pattern : "YYYY:MM:DD hh:mm:ss".
+
 You can omit any left-part of both dates in order to create smaller period.
 
 Time option is available with these values:
