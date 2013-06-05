@@ -129,7 +129,7 @@ Fil.tr
 
 ```javascript
   	{
-  		"type" : "COUNTRY",
+  		"name" : "COUNTRY",
 		"res" : [
 			{
 	  			"if" : "EN",
@@ -154,7 +154,7 @@ You can filter all countries in the [ISO Country codes list](http://www.iso.org/
 
 ```javascript
  	{
- 		"type" : "DEVICE",
+ 		"name" : "DEVICE",
   		"res" : [
   			{
   				"if" : "mobile",
@@ -182,7 +182,7 @@ You can filter the following list of languages :
 
 ```javascript
   	{
-  		"type" : "LANG",
+  		"name" : "LANG",
 		"res" : [
 			{
 	  			"if" : "US",
@@ -218,7 +218,7 @@ You can filter the following list of languages :
 
 ```javascript
  		{
- 		"type" : "ORIENTATION",
+ 		"name" : "ORIENTATION",
   		"res" : [
   			{
   				"if" : "portrait",
@@ -244,7 +244,7 @@ You can filter the following list of languages :
 
 ```javascript
  		{
- 			"type" : "OS",
+ 			"name" : "OS",
   		"res" : [
   			{
   				"if" : "iOS",
@@ -276,7 +276,7 @@ You can filter the following list of OS :
 
 ```javascript
  	{
- 		"type" : "RANDOM",
+ 		"name" : "RANDOM",
   		"res" : [
   			{
   				"if" : "80",
@@ -299,7 +299,7 @@ You can filter the following list of OS :
 
 ```javascript
   	{
-  		"type" : "RETINA",
+  		"name" : "RETINA",
 	  	"res" : [
 	  		{
 	  			"if" : true,
@@ -321,7 +321,7 @@ You can filter the following list of OS :
 
 ```javascript
  	{
- 		"type" : "Time",
+ 		"name" : "Time",
   		"res" : [
   			{
   				"if" : {
@@ -356,7 +356,7 @@ Time option is available with these values:
 
 ```javascript
  	{
- 		"type" : "WEEKDAY",
+ 		"name" : "WEEKDAY",
   		"res" : [
   			{
   				"if" : "1",
