@@ -18,6 +18,7 @@ Fil.tr
 	* [Retina Filter](#retina-filter)
 	* [Time Filter](#time-filter)
 	* [Weekdays Filter](#weekdays-filter)
+	* [Stat Filter](#stat-filter)
 	
 
 
@@ -334,8 +335,7 @@ You can filter the following list of OS :
  	}    
 ```
 
-
-Define intervals with "-".You can define intervals between Date, hours, seconds …
+Define intervals with "-". You can define intervals between Date, hours, seconds …
 
 To define a start-date, use "YYY:MM:DD hh:mm:ss-".
 
@@ -344,7 +344,7 @@ To define an end-date, use "-YYY:MM:DD hh:mm:ss".
 Time option is available with these values:
 
 	* "server" - The time and date reference is based on current time and date in UTC/GMT. This is the default option.
-	* "local" - The time and date reference is based on current time and date in the user time zone
+	* "local"  - The time and date reference is based on current time and date in the user time zone.
 	* "UTC+\*" - The time and date reference is based on current time and date in UTC+\* zone _(from UTC-12 to UTC+14)_
 	
 [_go on top_](#index)
@@ -386,7 +386,48 @@ Different weekdays for the same data with "/". _(eg. For "Tuesday AND Sunday" us
 Time option is available with these values:
 
 	* "server" - The time and date reference is based on current time and date in UTC/GMT. This is the default option.
-	* "local" - The time and date reference is based on current time and date in the user time zone
+	* "local"  - The time and date reference is based on current time and date in the user time zone.
 	* "UTC+\*" - The time and date reference is based on current time and date in UTC+\* zone _(from UTC-12 to UTC+14)_
 	
 [_go on top_](#index)
+
+###Stat Filter###
+
+_The stat filter decision is made depending on the number of visits (or visitors) of this filter_
+
+```javascript
+ 	{
+ 		"type" : "STAT",
+  		"res" : [
+  			{
+  				"if" : "-1000",
+	  			"then" : d
+  			},
+  			{
+  				"if" : "1001-1999",
+  				"then" : d,
+  			}
+  			{
+  				"if" : "2000-",
+  				"then" : d,
+  			}
+  		],
+  		"default" : d, 
+  		"options" : {
+  			"stat" : "view"
+  		}
+ 	}    
+```
+
+Define intervals with "-".
+
+Define an "up-to" value starting with "-"
+
+Define a "from" value ending with "-"
+
+Stat option is available with these values:
+
+	* "view"    - The decision is made depending on the number of visits (or visitors).
+	* "visitor" - The decision is made depending on the number of visits (or visitors).
+
+
