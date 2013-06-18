@@ -339,17 +339,10 @@ You can filter the following list of OS :
  	}    
 ```
 
-<<<<<<< HEAD
-Define intervals with "-". You can define intervals between Date, hours, seconds …
 
-To define a start-date, use "YYY:MM:DD hh:mm:ss-".
-
-To define an end-date, use "-YYY:MM:DD hh:mm:ss".
-=======
 Date must be defined using the following pattern : "YYYY:MM:DD hh:mm:ss".
 
 You can omit any left-part of both dates in order to create smaller period.
->>>>>>> a5cc1536d47f43feda7e5b69f4e38f22a59d2f9d
 
 Time option is available with these values:
 
