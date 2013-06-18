@@ -46,6 +46,7 @@ Fil.tr
 	"e" : {
 		"global" : {
 			"datetime":"2013-05-28T14:07:13.877Z",
+			"timezoneOffser":"-120",
 			"referrer": "http://google.com",
 			"cookies": String,
 			"dimensions":{
@@ -53,7 +54,7 @@ Fil.tr
 				"availWidth":1280,
 				"height":800,
 				"availHeight":708
-			},
+				},
   		},
   		"geolocation" : {
   			"available" : Bool,
@@ -129,7 +130,7 @@ Fil.tr
 
 ```javascript
   	{
-  		"type" : "COUNTRY",
+  		"name" : "COUNTRY",
 		"res" : [
 			{
 	  			"if" : "EN",
@@ -154,7 +155,7 @@ You can filter all countries in the [ISO Country codes list](http://www.iso.org/
 
 ```javascript
  	{
- 		"type" : "DEVICE",
+ 		"name" : "DEVICE",
   		"res" : [
   			{
   				"if" : "mobile",
@@ -182,7 +183,7 @@ You can filter the following list of languages :
 
 ```javascript
   	{
-  		"type" : "LANG",
+  		"name" : "LANG",
 		"res" : [
 			{
 	  			"if" : "US",
@@ -218,7 +219,7 @@ You can filter the following list of languages :
 
 ```javascript
  		{
- 		"type" : "ORIENTATION",
+ 		"name" : "ORIENTATION",
   		"res" : [
   			{
   				"if" : "portrait",
@@ -244,7 +245,7 @@ You can filter the following list of languages :
 
 ```javascript
  		{
- 			"type" : "OS",
+ 			"name" : "OS",
   		"res" : [
   			{
   				"if" : "iOS",
@@ -276,7 +277,7 @@ You can filter the following list of OS :
 
 ```javascript
  	{
- 		"type" : "RANDOM",
+ 		"name" : "RANDOM",
   		"res" : [
   			{
   				"if" : "80",
@@ -299,7 +300,7 @@ You can filter the following list of OS :
 
 ```javascript
   	{
-  		"type" : "RETINA",
+  		"name" : "RETINA",
 	  	"res" : [
 	  		{
 	  			"if" : true,
@@ -317,14 +318,17 @@ You can filter the following list of OS :
 
 ###Time Filter###
 
-<_Here is the description of the filter_>
+<_Filter a period of time_>
 
 ```javascript
  	{
- 		"type" : "Time",
+ 		"name" : "Time",
   		"res" : [
   			{
-  				"if" : "13:37/00-20:00:00",
+  				"if" : {
+  								"from" : DATE,
+  								"to" : DATE
+  							},
 	  			"then" : d
   			},
   		],
@@ -335,11 +339,17 @@ You can filter the following list of OS :
  	}    
 ```
 
+<<<<<<< HEAD
 Define intervals with "-". You can define intervals between Date, hours, seconds …
 
 To define a start-date, use "YYY:MM:DD hh:mm:ss-".
 
 To define an end-date, use "-YYY:MM:DD hh:mm:ss".
+=======
+Date must be defined using the following pattern : "YYYY:MM:DD hh:mm:ss".
+
+You can omit any left-part of both dates in order to create smaller period.
+>>>>>>> a5cc1536d47f43feda7e5b69f4e38f22a59d2f9d
 
 Time option is available with these values:
 
@@ -355,7 +365,7 @@ Time option is available with these values:
 
 ```javascript
  	{
- 		"type" : "WEEKDAY",
+ 		"name" : "WEEKDAY",
   		"res" : [
   			{
   				"if" : "1",
