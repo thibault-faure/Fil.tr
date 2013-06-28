@@ -18,6 +18,7 @@ Fil.tr
 	* [Retina Filter](#retina-filter)
 	* [Time Filter](#time-filter)
 	* [Weekdays Filter](#weekdays-filter)
+	* [Stat Filter](#stat-filter)
 	
 
 
@@ -129,7 +130,7 @@ Fil.tr
 
 ```javascript
   	{
-  		"type" : "COUNTRY",
+  		"name" : "COUNTRY",
 		"res" : [
 			{
 	  			"if" : "EN",
@@ -154,7 +155,7 @@ You can filter all countries in the [ISO Country codes list](http://www.iso.org/
 
 ```javascript
  	{
- 		"type" : "DEVICE",
+ 		"name" : "DEVICE",
   		"res" : [
   			{
   				"if" : "mobile",
@@ -182,7 +183,7 @@ You can filter the following list of languages :
 
 ```javascript
   	{
-  		"type" : "LANG",
+  		"name" : "LANG",
 		"res" : [
 			{
 	  			"if" : "US",
@@ -218,7 +219,7 @@ You can filter the following list of languages :
 
 ```javascript
  		{
- 		"type" : "ORIENTATION",
+ 		"name" : "ORIENTATION",
   		"res" : [
   			{
   				"if" : "portrait",
@@ -244,7 +245,7 @@ You can filter the following list of languages :
 
 ```javascript
  		{
- 			"type" : "OS",
+ 			"name" : "OS",
   		"res" : [
   			{
   				"if" : "iOS",
@@ -276,7 +277,7 @@ You can filter the following list of OS :
 
 ```javascript
  	{
- 		"type" : "RANDOM",
+ 		"name" : "RANDOM",
   		"res" : [
   			{
   				"if" : "80",
@@ -299,7 +300,7 @@ You can filter the following list of OS :
 
 ```javascript
   	{
-  		"type" : "RETINA",
+  		"name" : "RETINA",
 	  	"res" : [
 	  		{
 	  			"if" : true,
@@ -309,7 +310,8 @@ You can filter the following list of OS :
 	  			"if" : false,
 	  			"then" : d,
 			}
-		]
+		],
+		"default" : d
   	}    
 ```
 
@@ -321,7 +323,7 @@ You can filter the following list of OS :
 
 ```javascript
  	{
- 		"type" : "Time",
+ 		"name" : "Time",
   		"res" : [
   			{
   				"if" : {
@@ -338,6 +340,7 @@ You can filter the following list of OS :
  	}    
 ```
 
+
 Date must be defined using the following pattern : "YYYY:MM:DD hh:mm:ss".
 
 You can omit any left-part of both dates in order to create smaller period.
@@ -345,7 +348,7 @@ You can omit any left-part of both dates in order to create smaller period.
 Time option is available with these values:
 
 	* "server" - The time and date reference is based on current time and date in UTC/GMT. This is the default option.
-	* "local" - The time and date reference is based on current time and date in the user time zone
+	* "local"  - The time and date reference is based on current time and date in the user time zone.
 	* "UTC+\*" - The time and date reference is based on current time and date in UTC+\* zone _(from UTC-12 to UTC+14)_
 	
 [_go on top_](#index)
@@ -356,7 +359,7 @@ Time option is available with these values:
 
 ```javascript
  	{
- 		"type" : "WEEKDAY",
+ 		"name" : "WEEKDAY",
   		"res" : [
   			{
   				"if" : "1",
@@ -387,7 +390,48 @@ Different weekdays for the same data with "/". _(eg. For "Tuesday AND Sunday" us
 Time option is available with these values:
 
 	* "server" - The time and date reference is based on current time and date in UTC/GMT. This is the default option.
-	* "local" - The time and date reference is based on current time and date in the user time zone
+	* "local"  - The time and date reference is based on current time and date in the user time zone.
 	* "UTC+\*" - The time and date reference is based on current time and date in UTC+\* zone _(from UTC-12 to UTC+14)_
 	
 [_go on top_](#index)
+
+###Stat Filter###
+
+_The stat filter decision is made depending on the number of visits (or visitors) of this filter_
+
+```javascript
+ 	{
+ 		"type" : "STAT",
+  		"res" : [
+  			{
+  				"if" : "-1000",
+	  			"then" : d
+  			},
+  			{
+  				"if" : "1001-1999",
+  				"then" : d,
+  			}
+  			{
+  				"if" : "2000-",
+  				"then" : d,
+  			}
+  		],
+  		"default" : d, 
+  		"options" : {
+  			"stat" : "view"
+  		}
+ 	}    
+```
+
+Define intervals with "-".
+
+Define an "up-to" value starting with "-"
+
+Define a "from" value ending with "-"
+
+Stat option is available with these values:
+
+	* "view"    - The decision is made depending on the number of visits (or visitors).
+	* "visitor" - The decision is made depending on the number of visits (or visitors).
+
+
