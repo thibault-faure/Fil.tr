@@ -26,7 +26,7 @@ Fil.tr
 
 ###Filter API###
  
-<_Here is the description of the environment_>
+<_Here is the description of the filter_>
 
 ```javascript
 	{
