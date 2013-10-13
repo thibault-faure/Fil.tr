@@ -222,15 +222,16 @@ _Note: FORCE_SHADOW is a shortcut for X_SHADOW/Y_SHADOW_
 	
 	LOGO : {
 		L_NAME : "",
-		L_X : INT,
-		L_Y : INT,
-		L_WIDTH : INT,
-		L_LENGTH : INT,
+		L_X_Norm : FLOAT,
+		L_Y_Norm : FLOAT,
+		L_WIDTH : FLOAT,
+		L_LENGTH : FLOAT,
+		EXCAVATE : BOOLEAN
 	}
 
-**ENLIGHTMENT & CONTRAST - float**
+**L_X_Norm & L_Y_Norm**
 
-0 <= x <= 2
+The upper corner of the logo in the QR Code as a percentage. Set to 2 to have it centered.
 
 
 ###BACKGROUND###
