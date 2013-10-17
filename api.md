@@ -231,7 +231,7 @@ _Note: FORCE_SHADOW is a shortcut for X_SHADOW/Y_SHADOW_
 
 **L_X_Norm & L_Y_Norm**
 
-The upper corner of the logo in the QR Code as a percentage. Set to 2 to have it centered.
+The upper corner of the logo in the QR Code as a percentage. Omit to have it centered.
 
 
 ###BACKGROUND###
