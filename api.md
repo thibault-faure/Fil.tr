@@ -59,7 +59,7 @@ The QR Code API requests are based on this JSON :
 	data : {
 		type : "smsto",
 		data : {
-			TEL : "",
+			PHONE : "",
 			MESSAGE : ""
 		}
 	}
