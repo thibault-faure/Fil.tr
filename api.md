@@ -275,3 +275,27 @@ Modules look :
 ###ARRONDI - INT###
 
 0 <= x <= 10
+
+###TEXT###
+
+Use this module to add text under the QR Code
+
+	TEXT : {
+		LABEL : String,
+		COLOR : 000000,
+		SIZE : int,
+		POSITION : -,
+		STYLES : -,
+		FAMILY : -,
+		FAMILYLINK : String,
+		QRMARGIN : int,
+		SPACING : int
+		}
+		
+*LABEL : put \n for new lines		
+*POSITION : CENTER, LEFT, RIGHT or AUTO ( ie resize to take maximum space beneath the QR Code )
+*STYLES : PLAIN, BOLD, ITALIC, TOTAL ( BOLD+ITALIC )
+*FAMILY : Have a look at our font catalog, or CUSTOM
+*FAMILYLINK : only if FAMILY is CUSTOM, a link to a .TTF or .OTF file containing the family you wish to use
+*QRMARGIN : space between the QR Code and the text
+*SPACING : space in between two lines of text
